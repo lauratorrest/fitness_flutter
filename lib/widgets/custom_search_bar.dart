@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fitness/utils/constants.dart';
 
 class CustomSearchBar extends StatelessWidget {
   const CustomSearchBar({
@@ -34,11 +35,11 @@ class CustomSearchBar extends StatelessWidget {
           contentPadding: EdgeInsets.all(15),
           prefixIcon: Padding(
             padding: EdgeInsets.all(12),
-            child: SvgPicture.asset('assets/icons/Search.svg'),
+            child: SvgPicture.asset('${Constants.ICONS_PATH}Search.svg'),
           ),
           suffixIcon: Padding(
             padding: EdgeInsets.all(12),
-            child: SvgPicture.asset('assets/icons/Filter.svg'),
+            child: SvgPicture.asset('${Constants.ICONS_PATH}Filter.svg'),
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15),

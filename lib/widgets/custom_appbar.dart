@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:fitness/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -33,7 +34,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSize{
             color: Color(0xffF7F8F8),
             borderRadius: BorderRadius.circular(10)
           ),
-          child: SvgPicture.asset('assets/icons/Arrow - Left 2.svg', height: 20, width: 20)
+          child: SvgPicture.asset('${Constants.ICONS_PATH}Arrow - Left 2.svg', height: 20, width: 20)
         ),
       ),
       actions: [
@@ -47,7 +48,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSize{
               color: Color(0xffF7F8F8),
               borderRadius: BorderRadius.circular(10)
             ),
-            child: SvgPicture.asset('assets/icons/dots.svg', height: 5, width: 5)
+            child: SvgPicture.asset('${Constants.ICONS_PATH}dots.svg', height: 5, width: 5)
           ),
         )
       ],

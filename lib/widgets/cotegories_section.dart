@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:fitness/model/category_model.dart';
+import 'package:fitness/models/category_model.dart';
+import 'package:fitness/utils/constants.dart';
 
 class CategoriesSection extends StatelessWidget {
   const CategoriesSection({
@@ -58,7 +59,7 @@ class CategoriesSection extends StatelessWidget {
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: SvgPicture.asset('assets/icons/${categories[index].iconPath}'),
+                        child: SvgPicture.asset('${Constants.ICONS_PATH}${categories[index].iconPath}'),
                       ),
                     ),
 
